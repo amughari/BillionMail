@@ -7,6 +7,7 @@ import (
 	"billionmail-core/internal/controller/batch_mail"
 	"billionmail-core/internal/controller/campaign"
 	"billionmail-core/internal/controller/contact"
+	distribution_groups_controller "billionmail-core/internal/controller/distribution_groups"
 	"billionmail-core/internal/controller/dockerapi"
 	"billionmail-core/internal/controller/domains"
 	"billionmail-core/internal/controller/email_template"
@@ -256,6 +257,7 @@ var (
 					abnormal_recipient.NewV1(),
 					languages.NewV1(),
 					mail_services.NewV1(),
+					distribution_groups_controller.NewV1(),
 					relay.NewV1(),
 					settings.NewV1(),
 					subscribe_list.NewV1(),
